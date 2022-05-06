@@ -7,7 +7,8 @@ pipeline {
                 sh 'pip --version'
                 sh 'python3 --version'
                 sh 'python3 -m venv venv'
-                sh './venv/bin/activate && pip install kgx'
+                sh '. venv/bin/activate'
+                sh './venv/bin/pip install kgx'
             }
         }
     }
